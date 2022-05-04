@@ -572,3 +572,20 @@ textarea{
 .nb{
 	margin: 1px;
 }
+.contact-list-item{
+	padding: 10px;
+	width: 250px;
+	text-align: center;
+	height: 50px;
+	border-radius: 34px;
+}
+.contact-list-item:hover{
+	background-color: #15053c;
+	color: white;
+}
+.contact-list-item:hover .cb{
+	color: #e9ecef;
+}
+.cb{
+	margin: 0;
+}
