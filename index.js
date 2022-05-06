@@ -1,21 +1,18 @@
-var i = 0;
-var txt = "Join NFT world to earn!";
-var speed = 200;
-
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementsByClassName("typing_effect")[0].innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-    console.log(speed);
-  }
-  // else{
-  //   document.getElementsByClassName("typing_effect")[0].innerHTML.charAt(i) = "";
-  //   i--;
-  //   setTimeout(typeWriter, speed);
-  //   console.log(speed);
-  // }
+function sendEmail(name,mail,body) {
+	Email.send({
+	Host: "smtp.gmail.com",
+	Username : "muradexample7@gmail.com",
+	Password : "Murad1979.",
+	To : 'office@malibr.com',
+	From : "muradexample7@gmail.com",
+	Subject : "Malibr Information",
+	Body : `Mail:${mail} \n Name:${name} \n Message:${body}`,
+	}).then(
+		message => alert("mail sent successfully")
+	);
 }
-
-
-setTimeout(typeWriter,300);
+$('#joins').click(function(e){
+	console.log("asas");
+	e.preventDefault();
+	sendEmail($('#cnt_name').val(),$('#cnt_mail').val(),$('#cnt_body').body);
+})

@@ -8,6 +8,8 @@
 html {
 	font-size: 6px;
 	scroll-behavior: smooth;
+	overflow-x: hidden;
+
 }
 
 body {
@@ -15,6 +17,8 @@ body {
 	font-size: 1.6rem;
 	font-weight: 400;
 	line-height: 1.5;
+	width: 100vw;
+
 	background-color: #fff;
 }
 
@@ -117,6 +121,7 @@ section {
 	html {
 		font-size: 7px;
 	}	
+	
 }
 
 @media (min-width: 768px) {
@@ -131,6 +136,7 @@ section {
 	.col {
 		width: 50%;
 	}
+	
 }
 
 @media (min-width: 992px) {
@@ -145,7 +151,7 @@ section {
 	.col {
 		width: 33.33333%;
 	}
-}
+	}
 
 @media (min-width: 1200px) {
 	.container {
@@ -155,6 +161,7 @@ section {
 	html {
 		font-size: 10px;
 	}
+	
 }
 
 .text-uppercase {
@@ -165,9 +172,10 @@ section {
 /*navbar*/
 
 nav {
-	width: 100%;
+	width: 100vw;
 	font-family: Montserrat;
 	background-color: #eaf3ff;
+	background-color: #f2f3fc;
 	/* background-color: #15053c;eaf3ff */
 	color: #fff;
 	padding-top: 2.4rem;
@@ -249,18 +257,51 @@ nav {
 		right: 5px;
 		font-size: 3rem;
 	}
+	.ios-cover{
+		top: 0px!important;
+	}
+	.col-md-4 p {
+		text-align: center!important;
+	}
+	.col-md-4>ul,.col-md-3>ul{
+		margin-left: 40%!important;
+	}
+	.concep{
+		margin-left: 0px!important;
+	}
+	.headn,.headn>h1,.headn>h2{
+		text-align: center!important;
+	}
+	.tk-group{
+		left: 160px!important;
+	}
+	.img_tokm{
+		left: 0px!important;
+	}
+	.accords{
+		margin-left: 55px;
+	}
+	.concept{
+		width: 340px;
+	}
 }
-
+.tokenp{
+	color: #9e53f9;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+}
 
 
 /*Header*/
 
 header {
 	background-color: #eaf3ff;
+	background-color: #f2f3fc;
 	padding-top:calc(270px + 10rem); 
 	/* padding-bottom: 270px; */
 	text-align: center;
-	height: 800px;
+	height: auto;
 }
 
 header h1 {
@@ -348,8 +389,6 @@ hr.star-dark {
 	color: #eaf3ff;
 }
 
-.portfolio .row ul{
-} 
 
 .portfolio .row h4{
 	color: #eaf3ff;
@@ -444,8 +483,12 @@ hr.star-dark {
 		padding-right: 210px;
 		padding-left: 10px;
 	}
+
 }
 
+a:hover{
+	text-decoration: none!important;
+}
 /*contact*/
 
 #contact h2 {
@@ -541,7 +584,7 @@ footer li {
 .contact-input{
 	margin:5px;
 	height: 50px;
-	padding: 10px;
+	padding: 11px;
 	font-size: 15px;
 	outline: none;
 
@@ -580,9 +623,6 @@ textarea{
 
 
 /*Accordion*/
-.accordions{
-	display: flex;
-}
 .accordion-item{
 	border-radius: 36px;
 	width: 350px;
@@ -669,5 +709,8 @@ textarea{
 .token-list{
 	display: flex;
 	margin-bottom: 10px;
+}
+.qhead{
+	color: #9e53f9!important;
 }
 .fa-telegram:before{content:"\f2c6"}.fa-telegram-plane:before{content:"\f3fe"}
