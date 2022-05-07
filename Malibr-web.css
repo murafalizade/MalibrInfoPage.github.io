@@ -170,7 +170,9 @@ section {
 
 
 /*navbar*/
-
+.btn:focus{
+	box-shadow: none;
+}
 nav {
 	width: 100vw;
 	font-family: Montserrat;
@@ -223,6 +225,12 @@ nav {
 }
 
 @media (max-width: 992px) {
+	*{
+		font-size: 19px;
+	}
+	input,textarea{
+		width: 100%;
+	}
 	.ip{
 		top: -30px!important;
 	}
@@ -264,7 +272,7 @@ nav {
 		text-align: center!important;
 	}
 	.col-md-4>ul,.col-md-3>ul{
-		margin-left: 40%!important;
+		margin-left: 25%!important;
 	}
 	.concep{
 		margin-left: 0px!important;
@@ -272,8 +280,14 @@ nav {
 	.headn,.headn>h1,.headn>h2{
 		text-align: center!important;
 	}
+	.rdlist,.token-list{
+		font-size: 19px!important;
+	}
+	.rslist{
+		left:10px
+	}
 	.tk-group{
-		left: 160px!important;
+		left: 125px!important;
 	}
 	.img_tokm{
 		left: 0px!important;
